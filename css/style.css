@@ -1,0 +1,437 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+}
+
+*::selection {
+  background-color: #f83292;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar css star */
+
+nav {
+  height: 60px;
+  box-shadow: 10px 2px 30px gray;
+  background-color: #fff;
+  padding: 20px 8%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  list-style-type: none;
+}
+
+.logo li {
+  display: inline-block;
+}
+
+.logo li a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.nav__items {
+  list-style-type: none;
+}
+
+.nav__items li {
+  display: inline-block;
+}
+
+.nav__items li a {
+  font-size: 17px;
+  font-weight: 500;
+  color: #333333;
+  margin-left: 25px;
+  transition: 0.8s;
+}
+
+.nav__items li a:hover {
+  background-image: linear-gradient(90deg, #814096, #f83292);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* navbar css end */
+
+/* banner area css start */
+
+#banner {
+  margin-top: 60px;
+  background-image: url("../images/banner-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banner__section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner__content h1 {
+  width: 60%;
+  font-size: 40px;
+  font-weight: 800;
+  color: #333333;
+}
+
+.banner__content p {
+  font-size: 18px;
+  text-align: justify;
+  color: #666;
+  margin: 20px 0;
+}
+
+.banner__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__image img {
+  width: 90%;
+}
+
+.brand__color {
+  background-image: linear-gradient(90deg, #814096, #f83292);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.container {
+  width: 83%;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.brand__button {
+  padding: 13px 30px;
+  border-radius: 35px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(to right, #814096, #f83292);
+  transition: all 0.8s;
+  display: inline-block;
+}
+
+.brand__button:hover {
+  background-image: linear-gradient(to right, #f83292, #814096);
+  letter-spacing: 1.5px;
+}
+
+.font__awesome__icon {
+  margin-left: 10px;
+}
+
+/* banner area css end */
+
+/* app feature section css start  */
+
+.section__heading {
+  font-size: 35px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 30px;
+  background-image: linear-gradient(90deg, #814096, #fb097e, #814096);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.cards__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.single__card {
+  border: 0.8px solid rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgb(0 0 0 / 20%);
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.single__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 20%);
+}
+
+.card__image {
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.card__heading {
+  background-image: linear-gradient(90deg, #814096, #f83292);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  margin: 20px 0px 10px 0px;
+  font-size: 20px;
+}
+
+.card__content {
+  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.single__card button {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+/* app feature section css end  */
+
+/* about section css start */
+
+#about {
+  background-image: url("../images/about-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.about__section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__content h3 {
+  font-size: 30px;
+  font-weight: 800;
+  color: rgb(117 112 112);
+}
+
+.about__content p {
+  font-size: 18px;
+  text-align: justify;
+  color: #666;
+  margin: 20px 0;
+}
+
+.about__content button {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.about__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__image img {
+  width: 90%;
+}
+
+/* about section css end */
+
+/* subscribe section css start */
+
+#subscribe {
+  background-image: url("../images/subscribe-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#subscribe h2 {
+  color: #fff;
+}
+
+#subscribe p {
+  color: #fff;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto 50px auto;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#email {
+  margin-top: 30px;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 15px 30px;
+  background-color: transparent;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.submit__button {
+  position: absolute;
+  right: 10px;
+  padding: 10px 25px;
+  background-color: aliceblue;
+  color: #f83292;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* subscribe section css end */
+
+/* PEOPLE'S REVIEW section css start  */
+
+#review .single__card {
+  position: relative;
+}
+
+#review .single__card .bg__icon {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  font-size: 65px;
+  opacity: 0.3;
+  color: #f83292;
+}
+
+#review img {
+  border-radius: 50%;
+}
+
+.starts {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.starts .review__icon {
+  color: #ffc107;
+  text-align: center;
+}
+
+/* PEOPLE'S REVIEW section css end  */
+
+/* price section css start */
+
+#pricing .single__card {
+  position: relative;
+}
+
+#pricing .pricing__icon {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  font-size: 65px;
+  opacity: 0.3;
+  color: #f83292;
+}
+
+#pricing .single__card {
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+
+#pricing .single__card:hover {
+  border: 2px solid #814096;
+}
+
+.price {
+  font-size: 30px;
+}
+
+#pricing h3 {
+  margin-bottom: 10px;
+}
+
+#pricing p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#pricing ul {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+#pricing ul li {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.right__icon {
+  color: #008000;
+}
+
+.wrong__icon {
+  color: #ff0000;
+}
+
+/* price section css end */
+
+/* footer part css start */
+
+footer {
+  background-image: url("../images/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* footer part css end */

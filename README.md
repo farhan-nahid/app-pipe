@@ -1,6 +1,10 @@
 # App Pipe
 
-> This is a simple responsive landing page website
+> This is a simple responsive landing page of mobile app.
+
+###
+
+<!-- img -->
 
 ### Live Link
 
@@ -8,11 +12,11 @@
 
 ### Technology
 
-- HTML5
-- CSS3
+- [x] HTML5
+- [x] CSS3
 
 ### Tools
 
-- VS Code
-- Git
-- GitHub
+- [x] VS Code
+- [x] Git
+- [x] GitHub

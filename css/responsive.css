@@ -57,7 +57,7 @@
     top: 60px;
     right: -100%;
     height: 100vh;
-    width: 50%;
+    width: 30%;
     display: block;
     text-align: center;
     background-image: linear-gradient(90deg, #814096, #f83292);
@@ -65,9 +65,13 @@
     opacity: 0.8;
   }
 
-  input:checked ~ .nav__items {
+  nav input:checked ~ .nav__items {
     right: 0;
   }
+
+  /* nav input:checked ~ label::after {
+    content: "\f00d";
+  } */
 
   .nav__items li {
     display: block;
@@ -79,16 +83,11 @@
   }
 
   .nav__items li a:hover {
-    color: #00ffff;
+    color: #09f8f8;
   }
 
-  nav label i {
+  nav label {
     display: block;
-  }
-
-  input:checked ~ nav label i::before {
-    content: "\f00d";
-    font-family: "fontawesome";
   }
 }
 
@@ -102,6 +101,10 @@
   }
 
   .about__section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -126,7 +129,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-  form {
+  .email__form {
     width: 100%;
   }
 

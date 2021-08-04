@@ -55,9 +55,9 @@
   .nav__items {
     position: fixed;
     top: 60px;
-    right: -100%;
+    right: -40%;
     height: 100vh;
-    width: 30%;
+    width: 40%;
     display: block;
     text-align: center;
     background-image: linear-gradient(90deg, #814096, #f83292);
@@ -68,10 +68,6 @@
   nav input:checked ~ .nav__items {
     right: 0;
   }
-
-  /* nav input:checked ~ label::after {
-    content: "\f00d";
-  } */
 
   .nav__items li {
     display: block;
